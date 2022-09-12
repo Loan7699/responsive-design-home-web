@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+
+    <!-- link Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- gg fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="homepage">
+        <div class="header header1">
+            <div class="logo">
+                <img src="./img/logo DHome-01.png">
+            </div>
+
+            <div class="icon">
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="popup-menu">
+                <ul class="sub-menu">
+                    <li>List your property</li>
+                    <li>Trips</li>
+                    <li class="mess">Messages</li>
+                    <li class="support">Support</li>
+
+                    <li class="profile">
+                        <img src="./img/avatar.png">
+                        <p>Isla Schoger</p>
+                    </li>
+                </ul>
+
+                <ul class="account">
+                    <li>Account settings</li>
+                    <li>Support</li>
+                    <li>Sign out</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <div class="search-box">
+                    <input type="text" name="search" placeholder="Search by key words">
+                </div>
+
+                <div class="filter">
+                    <span><img src="./img/filter.png"></span>
+                    <p>Filters</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-filter">
+            <div class="filter-container">
+                <form class="filter1">
+                    <div class="bed">
+                        <label for="bedrooms">Bedrooms</label>
+                        <br>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="bath">
+                        <label for="bedrooms">Bathrooms</label>
+                        <br>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+                    <div class="price-room">
+                        <label for="bedrooms">Price Range</label>
+                        <br>
+                        <select>
+                            <option value="1">Up to $2,000 /wk</option>
+                            <option value="2">Up to $1,500 /wk</option>
+                            <option value="3">Up to $1,000 /wk</option>
+                        </select>
+                    </div>
+                </form>
+                <form class="filter2">
+                    <p>Property type</p>
+                    <div class="filter-type">
+                        <div class="">
+                            <input type="radio" id="house" class="form-check-input" checked>
+                            <label for="house" class="form-check-label">House</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Apartment</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Loft</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Townhouse</label>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="filter3">
+                    <p>Amenities</p>
+                    <div class="filter-last">
+                        <div>
+                            <input type="checkbox" id="house" class="form-check-input" checked>
+                            <label for="house" class="form-check-label">Balcony</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Air conditioning</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Pool</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="check" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Beach</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="check" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Pet friendly</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="check" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Kid friendly</label>
+                            <br>
+                        </div>
+
+                        <div>
+                            <input type="check" id="house" class="form-check-input">
+                            <label for="house" class="form-check-label">Parking</label>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="updatebtn">
+                <button>Update results</button>
+            </div>
+        </div>
+
+        <div class="container-content">
+            <div class="content">
+                <h2>Los Angeles</h2>
+                <div>
+                    <p>Live like the stars in these luxurious Southern California estates.</p>
+                    <p>View all</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card-item">
+                        <div class="image">
+                            <img src="./img/image1.png">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="type">
+                                <p>plus</p>
+                                <p class="quantity">3 beds . 2 baths</p>
+                            </div>
+
+                            <h2>Modern home in city center</h2>
+                            <p class="price">$1,400<span>/wk</span></p>
+
+                            <div class="review">
+                                <div class="rate">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+
+                                <p>34 Reviews</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="image">
+                            <img src="./img/image2.png">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="type">
+                                <p>plus</p>
+                                <p class="quantity">3 beds . 2 baths</p>
+                            </div>
+
+                            <h2>Isolated house outside of...</h2>
+                            <p class="price">$1,400<span>/wk</span></p>
+
+                            <div class="review">
+                                <div class="rate">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+
+                                <p>34 Reviews</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="image">
+                            <img src="./img/image1.png">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="type">
+                                <p>plus</p>
+                                <p class="quantity">3 beds . 2 baths</p>
+                            </div>
+
+                            <h2>Large dream home with...</h2>
+                            <p class="price">$1,400<span>/wk</span></p>
+
+                            <div class="review">
+                                <div class="rate">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+
+                                <p>34 Reviews</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="option-view">View all properties in Los Angeles <span>&#8594;</span></p>
+            </div>
+
+            <div class="content">
+                <h2>Phoenix</h2>
+                <div>
+                    <p>Escape the cold and enjoy great weather without breaking the bank.</p>
+                    <p>View all</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card-item">
+                        <div class="image">
+                            <img src="./img/image6.png">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="type">
+                                <p>plus</p>
+                                <p class="quantity">3 beds . 2 baths</p>
+                            </div>
+
+                            <h2>Modern home in city center</h2>
+                            <p class="price">$1,400<span>/wk</span></p>
+
+                            <div class="review">
+                                <div class="rate">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+
+                                <p>34 Reviews</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="image">
+                            <img src="./img/image5.png">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="type">
+                                <p>plus</p>
+                                <p class="quantity">3 beds . 2 baths</p>
+                            </div>
+
+                            <h2>Isolated house outside of...</h2>
+                            <p class="price">$1,400<span>/wk</span></p>
+
+                            <div class="review">
+                                <div class="rate">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+
+                                <p>34 Reviews</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="image">
+                            <img src="./img/image6.png">
+                        </div>
+
+                        <div class="content-card">
+
+                            <div class="type">
+                                <p>plus</p>
+                                <p class="quantity">3 beds . 2 baths</p>
+                            </div>
+
+                            <h2>Large dream home with...</h2>
+                            <p class="price">$1,400<span>/wk</span></p>
+
+                            <div class="review">
+                                <div class="rate">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                </div>
+
+                                <p>34 Reviews</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p class="option-view">View all properties in Los Angeles <span>&#8594;</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

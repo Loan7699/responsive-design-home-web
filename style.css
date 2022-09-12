@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+select {
+    outline: none;
+}
+
+.homepage {
+    position: relative;
+}
+
+
+/* CSS header */
+.header {
+    background-color: #1A202C;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo, .popup-menu {
+    /* flex-basis: 22%; */
+}
+
+.icon {
+    padding-right: 17px;
+}
+
+.logo {
+    padding: 10px 0 10px 17px;
+    margin-right: auto;
+}
+
+.logo > img {
+    height: 40px;
+}
+
+.menu > i {
+    color: #A0AEC0;
+}
+
+
+/* CSS box */
+.box {
+    background-color: #2D3748;
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: 3fr 1.5fr; */
+}
+
+.search-box {
+    padding: 10px 0 17px 15px;
+}
+
+.search-box > input {
+    border-radius: 8px;
+    padding: 8px 16px 8px 40px;
+    font-size: 16px;
+
+    border: none;
+    width: 230px;
+
+    background-color: #1A202C;
+    background-image: url('./img/secondary.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.filter {
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #4A5568;
+
+    display: flex;
+    height: 40px;
+    width: 104px;
+
+    line-height: 40px;
+    margin: 10px 17px 10px 14px;
+}
+
+.filter > span {
+    padding: 12px;
+}
+
+.filter > p {
+    color: #ffffff;
+}
+
+
+/* CSS content  */
+.content {
+    background-color: #E5E5E5;
+    padding: 0 17px;
+}
+
+.content > h2 {
+    padding: 32px 0 9px 0;
+    font-weight: 400;
+}
+
+.content > div > p:first-child {
+    color: #718096;
+    padding-bottom: 20px;
+}
+
+.content > div > p:nth-child(2) {
+    color: #5A67D8;
+    display: none;
+}
+
+.cards {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item {
+    position: relative;
+
+    flex-basis: 100%;
+    margin-bottom: px;
+}
+
+.content:nth-child(2) h2 {
+    padding-top: 0;
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.content-card {
+    width: 320px;
+    height: 144px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: auto;
+    padding: 19px 0 19px 19px;
+
+    position: relative;
+    top: -72px;
+}
+
+.type {
+    display: flex;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.type p:first-child {
+    width: 49px;
+    height: 20px;
+    border-radius: 18px;
+
+    background: #B2F5EA;
+    text-align: center;
+    line-height: 20px;
+}
+
+.quantity {
+    color: #718096;
+    margin-left: 8px;
+}
+
+.content-card > h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.price >  span {
+    color: #718096;
+    font-size: 14px;
+}
+
+ p {
+    margin-bottom: 0;
+ }
+
+.review {
+    display: flex;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.rate {
+    color: #38B2AC;
+    margin-right: 12px;
+}
+
+.display {
+    display: block;
+}
+
+.content .option-view {
+   display: none;
+}
+
+/* CSS popup menu */
+.close > i {
+    color: #A0AEC0;
+    display: none;
+}
+
+.popup-menu {
+    display: none;
+    flex-basis: 100%;
+
+    background-color: #1A202C;
+    color: #ffffff;
+}
+
+.popup-menu ul {
+    padding-left: 0;
+}
+
+.sub-menu .mess {
+    border-bottom: 2px solid #2D3748;
+    padding-bottom: 32px;
+}
+
+.support {
+    display: none;
+}
+
+.account {
+    padding: 0 0 0 21px;
+}
+
+li {
+    padding: 10px 0 10px 21px;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    padding: 21px 0 0 21px;
+}
+
+.profile > img {
+    border-radius: 50%;
+
+    margin: 0;
+}
+
+.profile > p {
+    line-height: 40px;
+    padding-left: 19px;
+}
+
+.account > li {
+    color: #CBD5E0;
+    padding-bottom: 10px;
+}
+
+
+/* CSS popup-filter */
+.popup-filter {
+    background: #2D3748;
+    display: none;
+}
+
+.toggle-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-filter > form {
+    border-top: 1px solid #1A202C;
+    padding-bottom: 20px;
+}
+
+.filter1 label, .popup-filter p {
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+.filter1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bed, .bath {
+    flex-basis: 50%;
+    padding: 20px 17px;
+    flex-grow: 2;
+}
+
+.filter1 select {
+    background: #4A5568;
+    color: #ffffff;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    border: none;
+
+    width: 100%;
+    padding: 8px 10px;
+
+}
+
+.price-room {
+    padding: 0 17px;
+    flex-grow: 1;
+}
+
+.price-room > select {
+    
+}
+
+.filter2, .filter3 {
+    padding: 18px 0 0 19px;
+}
+
+.filter-type, .filter-last {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-type > div, .filter-last > div {
+    color: #ffffff;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.updatebtn {
+    background-color: #1A202C;
+    height: 80px;
+
+    display: flex;
+}
+
+.updatebtn button {
+    color: #ffffff;
+    background: #667EEA;
+
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+
+    padding: 12px 100px;
+    margin: auto;
+}
+
+.form-check-input {
+    background-color: #1A202C;
+    margin-right: 10px;
+}
+
+
+/* Responsive ipad 834px */
+@media (min-width : 834px) {
+
+    /* header*/
+    .menu > i {
+       display: none;
+    }
+
+    .close > i {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .popup-menu {
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .sub-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .search-box > input {
+        width: 320px;
+    }
+
+    .sub-menu > li {
+        align-self: center;
+    }
+
+    .account {
+        background: #FFFFFF;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.04);
+        display: none;
+
+        width: 200px;
+        border-radius: 8px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+    .account > li {
+        color: #333333;
+    }
+
+    .sub-menu .mess {
+        border-bottom: none;
+        padding-bottom: 10px;
+    }
+
+    .account li:nth-child(2) {
+        background: #667EEA;
+        color: #ffffff;
+    }
+
+    .profile {
+        padding: 10px 21px 10px;
+    }
+
+    .profile > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile > p {
+        display: none;
+    }
+
+    .toggle-account {
+        display: block;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    /* filter */
+    .filter1 {
+        flex-wrap: nowrap;
+    }
+
+    .bath {
+        padding: 20px 0;
+        flex-grow: 0;
+        flex-basis: 25%;
+    }
+
+    .bed {
+        flex-grow: 0;
+        flex-basis: 25%;
+    }
+
+    .price-room {
+        padding: 20px 17px 20px 17px;
+        flex-grow: 2;
+        flex-basis: 25%;
+    }
+
+    .filter-type {
+        flex-direction: row;
+    }
+
+    .filter-type > div {
+        flex-basis: 25%;
+    }
+
+    .filter-type div:last-child {
+        /* margin-right: 20px; */
+    }
+
+    .filter-last {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filter-last > div {
+        flex-basis: 25%;
+    }
+
+    .updatebtn {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .updatebtn button {
+        margin: 0 0 0 17px;
+        padding: 0;
+        width: 145px;
+        height: 40px;
+    }
+
+    /* content */
+    .cards > div:nth-child(3) {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .card-item:first-child {
+        padding-right: 20px;
+    }
+
+    .content .option-view {
+        color: #5A67D8;
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+/* Responsive ipad 1024px */
+@media (min-width : 1024px) {
+    /* filter */
+    .filter-container {
+        border-top: 1px solid #333333;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 2.5fr;
+        padding-bottom: 40px;
+    }
+
+    .filter1 {
+        flex-wrap: wrap;
+    }
+
+    .filter1, .filter-type {
+        border-right: 1px solid #333333;
+    }
+
+    .bed, .bath {
+        flex-basis: 50%;
+        padding: 20px 17px 0 17px;
+    }
+
+    .price-room {
+        padding: 0 17px;
+    }
+
+    .filter-type {
+        flex-direction: column;
+    }
+
+    .filter-last {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* content */
+    .cards > div:nth-child(3) {
+        display: block;
+    }
+
+    .card-item {
+        padding: 0 10px;
+    }
+
+    .card-item:first-child {
+        padding-right: 10px;
+    }
+
+    .content-card {
+        width: 280px;
+    }
+
+    .content > p:last-child {
+        display: none;
+    }
+
+    .content > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content > h2 {
+        padding: 32px 0 9px 10px;
+    }
+
+    .content > div > p:first-child {
+        padding-left: 10px;
+    }
+
+    .content > div > p:nth-child(2) {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width : 1280px) {
+    .header {
+        flex-wrap: nowrap;
+        background-color: #ffffff;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .popup-menu {
+        order: 1;
+
+        background-color: #ffffff;
+        color: #333333;
+    }
+
+    .sub-menu li {
+        font-weight: 500;
+    }
+
+    .box {
+        background-color: #ffffff;
+        width: 280px;
+    }
+
+
+    .search-box > input {
+        background-image: url('./img/secondary1280.png');
+        background-color: #EDF2F7;
+        width: 100%;
+    }
+
+    .logo {
+        background-color: #333333;
+        flex-basis: 296px;
+    }
+
+    .support {
+        display: block;
+    }
+
+    .container-content {
+        display: grid;
+        grid-template-columns: 296px 1fr;
+
+        background-color: #E5E5E5;
+    }
+
+    .content {
+        grid-column: 2 / 3;
+    }
+
+    /* CSS filter */
+    .popup-filter {
+        width: 296px;
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-last {
+        grid-template-columns: 1fr;
+    }
+
+    .updatebtn button {
+        width: 256px;
+        margin: auto;
+    }
+}
